@@ -4,10 +4,8 @@ import ollama
 
 def handle_client(client_socket, client_address):
     print(f"Accepted connection from {client_address}")
-    
     username = client_socket.recv(1024).decode("utf-8").strip()
     print(f"{client_address} is now known as {username}")
-    
     while True:
         try:
             data = client_socket.recv(1024).decode("utf-8")
@@ -20,24 +18,20 @@ def handle_client(client_socket, client_address):
                     ])
                 print(f"Received message from {username}: {data}")
             
-                broadcast(f"{username}: {response['message']['content']}", client_socket)
-                
+                broadcast(f"{username}: {response['message']['content']}", client_socket) 
             elif not data:
                 print(f"Connection from {client_address} closed.")
                 break
-            
             else:
                 print(f"Received message from {username}: {data}")
                 
                 # Broadcast the received message to all clients except the sender
                 broadcast(f"{username}: {data}", client_socket)
-            
         except Exception as e:
             print(f"Error handling client {client_address}: {str(e)}")
             break
-
     client_socket.close()
-
+    
 def broadcast(message, sender_socket):
     for client in clients:
         if client != sender_socket:
