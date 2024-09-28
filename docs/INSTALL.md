@@ -1,14 +1,28 @@
-# How to use
+# How to install and setup before launch
 
-Required:
-1. python version = 3.12.5
+## Required tools
+Click on each of them to go to the installation guide.
 
-## Install
-Clone the repository and switch to code:
+[python 3.12.5](https://www.python.org/downloads/release/python-3125/)
+
+[poetry](https://github.com/python-poetry/install.python-poetry.org)
+
+[ollama](https://ollama.com/) (for server only)
+
+
+## Clone the branch
 ```bash
-git clone https://github.com/mfranzon/message-chat-llm && cd src/
+git clone https://github.com/mfranzon/message-chat-llm
 ```
-Setup environment:
+
+## Install Dependencies
+Switch to code:
+```bash
+cd src/
+```
+Install environment:
 ```bash
 poetry shell && poetry install
 ```
+
+
