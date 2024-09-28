@@ -1,7 +1,7 @@
 # FAQ
 
 ## How change `/?` to the other prefix? 
-To change the default messages/prefix just set the new value to `env.py` file.
+To change the default messages/prefix just set the new value to `src/env.py` file.
 Defaults:
 ```
 # To get your ollama installed models: `ollama list`.
