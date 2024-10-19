@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "message-chat-llm"
 version = "0.1.0"
-description = ""
+description = "Simple instant messaging application with an LLM in chat"
 authors = ["Marco Franzon <js.win40@gmail.com>", "Ivan Sakharov <vingving648@gmail.com>", ]
 readme = "README.md"
 
