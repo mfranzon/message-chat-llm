@@ -2,7 +2,7 @@
 name = "message-chat-llm"
 version = "0.1.0"
 description = ""
-authors = ["Ivan Sakharov <vingving648@gmail.com>", ]
+authors = ["Marco Franzon <js.win40@gmail.com>", "Ivan Sakharov <vingving648@gmail.com>", ]
 readme = "README.md"
 
 [tool.poetry.dependencies]
