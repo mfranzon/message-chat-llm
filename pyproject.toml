@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "message-chat-llm"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Sakharov <vingving648@gmail.com>", ]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0.1"
+ollama = "^0.3.3"
+termcolor = "^2.4.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
